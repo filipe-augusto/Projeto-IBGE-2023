@@ -20,28 +20,6 @@ builder.Services.AddSwaggerGen( g =>
     g.SwaggerDoc("v1", new OpenApiInfo { Title = "Projeto IBGE", Version = "v1" });
     g.OperationFilter<AddAuthorizationHeaderParameter>(); 
 
-    //g.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
-    //{
-    //    Name = "Authorization",
-    //    Type = SecuritySchemeType.ApiKey,
-    //    BearerFormat  = "JWT",
-    //    In = ParameterLocation.Header,
-    //    Description = "JWT (JSON Web Token) é um padrão aberto (RFC 7519) que define uma maneira compacta e autocontida para transmitir informações de forma segura entre partes como um objeto JSON",
-
-    //});
-    //g.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement()
-    //{
-    //    {
-    //        new OpenApiSecurityScheme(){ 
-    //    Reference = new OpenApiReference()
-    //    {
-    //        Type= ReferenceType.SecurityScheme,
-    //        Id = "Berear"
-    //    }
-    //    },
-    //        new string[]{ }
-    //    }
-    //});
 
 });
 
@@ -49,8 +27,7 @@ builder.Services.AddSwaggerGen( g =>
 var app = builder.Build();
 Configuracao.Key = app.Configuration.GetValue<string>("JwtKey");
 
-//if (app.Environment.IsDevelopment())
-//{
+
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
@@ -59,14 +36,11 @@ Configuracao.Key = app.Configuration.GetValue<string>("JwtKey");
     
     });
 
-   // Console.WriteLine("ambiente de desenvolvimento");
-//}
 if (app.Environment.IsProduction())
 {
     Console.WriteLine(" ambiente de produção");
 }
-//app.UseRouting();
-//app.UseHttpsRedirection();
+
 app.MapControllers();
 app.Run();
 
