@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'ibge2210'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7C354ECA03D44141A1EA4F38FA352E47 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D1A878D2CB5444D080EF2543CCF3B52F }}
           package: .
