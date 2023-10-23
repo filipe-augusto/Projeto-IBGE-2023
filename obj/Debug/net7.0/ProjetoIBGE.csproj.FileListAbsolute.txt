@@ -1,0 +1,7 @@
+C:\Users\User_PC\source\repos\filipe-augusto\ProjetoIBGE\obj\Debug\net7.0\ProjetoIBGE.csproj.AssemblyReference.cache
+C:\Users\User_PC\source\repos\filipe-augusto\ProjetoIBGE\obj\Debug\net7.0\ProjetoIBGE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User_PC\source\repos\filipe-augusto\ProjetoIBGE\obj\Debug\net7.0\ProjetoIBGE.AssemblyInfoInputs.cache
+C:\Users\User_PC\source\repos\filipe-augusto\ProjetoIBGE\obj\Debug\net7.0\ProjetoIBGE.AssemblyInfo.cs
+C:\Users\User_PC\source\repos\filipe-augusto\ProjetoIBGE\obj\Debug\net7.0\ProjetoIBGE.csproj.CoreCompileInputs.cache
+C:\Users\User_PC\source\repos\filipe-augusto\ProjetoIBGE\obj\Debug\net7.0\ProjetoIBGE.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User_PC\source\repos\filipe-augusto\ProjetoIBGE\obj\Debug\net7.0\ProjetoIBGE.MvcApplicationPartsAssemblyInfo.cache

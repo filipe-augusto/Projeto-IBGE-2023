@@ -1,0 +1,27 @@
+﻿CREATE TABLE [User] (
+    Id UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
+    Name NVARCHAR(255) NOT NULL,
+	PassWordHash NVARCHAR(255)NOT NULL,
+	DateCreate datetime NOT NULL,
+	IsActive BIT NOT NULL
+)
+CREATE INDEX [IX_User_ID] ON [User] ([Id]);
+CREATE INDEX [IX_User_Name] ON [User] ([Name]);
+
+CREATE TABLE [IBGE]
+(    
+    [Id] CHAR(7) NOT NULL,    
+    [State] CHAR(2) NULL,    
+	[City] NVARCHAR(80) NULL,
+    CONSTRAINT [PK_IBGE] PRIMARY KEY ([Id])
+);
+GO
+
+CREATE INDEX [IX_IBGE_Id] ON [IBGE] ([Id]);
+GO
+
+CREATE INDEX [IX_IBGE_City] ON [IBGE] ([City]);
+GO
+
+CREATE INDEX [IX_IBGE_State] ON [IBGE] ([State]);
+GO
