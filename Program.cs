@@ -90,8 +90,8 @@ void ConfigureServices(WebApplicationBuilder builder)
 
     builder.Services.AddDbContext<IBGEDataContext>(options => {
         
-        //options.UseSqlServer(Configuracao.Decrypt(builder.Configuration.GetConnectionString("DefaultConnection"),builder.Configuration.GetValue<string>("_"))); //só funciona em modo debug
-        options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+        options.UseSqlServer(Configuracao.Decrypt(builder.Configuration.GetConnectionString("DefaultConnection"),builder.Configuration.GetValue<string>("_"))); //só funciona em modo debug
+        //options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
     });
     builder.Services.AddTransient<TokenService>();
 
